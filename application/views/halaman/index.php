@@ -60,7 +60,7 @@
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="form-group fill">
-											<input type="text" class="form-control" name="nama" placeholder="Masukkan nama barang">
+											<input type="text" class="form-control" name="nama" placeholder="Masukkan nama">
 										</div>
 									</div>
 									<div class="col-sm-1">
@@ -73,7 +73,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel"><i class="feather icon-map"></i> Tambah Data Barang</h5>
+												<h5 class="modal-title" id="exampleModalLabel"><i class="feather icon-map"></i> Tambah Data</h5>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">×</span>
 												</button>
