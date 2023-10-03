@@ -83,7 +83,6 @@
 											<?php echo validation_errors(); ?>
 											<?php echo form_open('halaman/add_proses', array('id' => 'forms')); ?>
 											<div class="modal-body text-left">
-
 												<div class="form-group fill">
 													<label>Nama </label>
 													<input type="text" class="form-control" name="nama" placeholder="Masukkan nama">
@@ -258,8 +257,13 @@
 
 		function selControl(x) {
 			if (x == "perm_lantai") {
-				var id = $("select[name=lantai] option:selected").attr();
-				alert(id);
+				var option = $('select[name=upline] option:selected').attr('data-jml');
+				if (option == 2 || option > 2) {
+					alert("Jumlah Upline sudah sesuai dan tidak boleh lebih !");
+					$('#tambahData').modal('toggle');
+					window.location.reload();
+				}
+
 			}
 		}
 	</script>
